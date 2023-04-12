@@ -78,13 +78,13 @@ color: #FFFFFF;
     background-size: cover;
   }
   .carousel .one {
-    background-image: url(image1.png);
+    background-image: url(img/image1.png);
   }
   .carousel .two {
-    background-image: url(image2.png);
+    background-image: url(img/image2.png);
   }
   .carousel .three {
-    background-image: url(image1.png);
+    background-image: url(img/image1.png);
   }
   .carousel .four {
     background-image: url(https://cdn.pixabay.com/photo/2021/09/20/21/32/lake-6641880__340.jpg);
@@ -201,7 +201,7 @@ a {
 .hero {
     margin-top: 100px;
     margin-bottom: 20px;
-    background-image: url('image2.png');
+    background-image: url('img/image2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
