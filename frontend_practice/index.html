@@ -33,12 +33,15 @@
     </div>
   </div>
 
-    <header>
+    <header class="container">
         <nav>
+        <img src="logo_saint.png" class="saint_logo">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">Irish Week</a></li>
+            <li><a href="#">Reservation</a></li>
           </ul>
         </nav>
       </header>
@@ -51,18 +54,18 @@
         <input type="radio" name="carousel" id="slide-btn-5" class="slide-btn" onclick="setInt();" />
         <div class="slide one -effectparallax"><h1>Come experience <br>
             craft cocktails</h1>
-          <div class="credit"><a href="#/">Read More</a></div></div>
+          <div class="credit"><a href="#/">View More</a></div></div>
         <div class="slide two -effectparallax"><h1>Come experience <br>
             craft cocktails 2</h1>
-          <div class="credit"><a href="#">Read More</a></div></div>
+          <div class="credit"><a href="#">View More</a></div></div>
         <div class="slide three -effectparallax"><h1>Come experience <br>
             craft cocktails 3</h1>
-          <div class="credit"><a href="#">Read More</a></div></div>
+          <div class="credit"><a href="#">View More</a></div></div>
         <div class="slide four -effectparallax"><h1>Come experience <br>
             craft cocktails 4</h1>
-          <div class="credit"><a href="#">Read More</a></div></div>
+          <div class="credit"><a href="#">View More</a></div></div>
         <div class="slide five -effectparallax"><h1>Slide 5</h1>
-          <div class="credit"><a href="#">Read More</a></div></div>
+          <div class="credit"><a href="#">View More</a></div></div>
         <div class="labels">
           <label for="slide-btn-1"></label>
           <label for="slide-btn-2"></label>
@@ -72,6 +75,39 @@
         </div>
       </div>
 
+
+      <section class="reservation-section">
+        <h2>Select date and time for reservation</h2>
+        <form class="reservation-form">
+          <div class="col-3">
+
+          </div>
+          <div class="col-3">
+            <label for="reservation-date">Date:</label>
+          <input type="date" id="reservation-date" name="reservation-date" value="19-04-2023" required>
+          </div>
+          <div class="col-3">
+            <label for="reservation-time">Time:</label>
+          <input type="time" id="reservation-time" name="reservation-time" required>
+          </div>
+          <div class="col-3">
+            <label for="people-counter">Number of people:</label>
+            <input type="number" id="people-counter" name="people-counter" min="1" max="10" value="1" required>
+          </div>
+          
+          <div class="col-3">
+            <label></label><br>
+            <button type="submit">Check Availability</button>
+          </div>
+          
+        
+          
+         
+          
+          
+        </form>
+        <p>Click on check availabilty button and book your table</p>
+      </section>
 
 
       <section class=" hero">
@@ -91,8 +127,9 @@
         </div>
       </section>
       
-
+      <div class="content_of_subscribe"><h2>About Us</h2></div>
       <div class="container">
+      
       <section class="blog-section">
         <div class="blog-post first_post">
           <img src="Rectangle29.png" alt="Blog post 1">
@@ -215,32 +252,77 @@
           
           </section>
 
+          <div class="testimonial-slider">
+            <div class="testimonial-slide active-slide">
+              <div class="testimonial-text">
+                <p>Venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros. Nam quam nunc
+                  , blandit vel, luctus pulvinar, hendrerit iderit runterum elit amet.</p>
+                <h3>HAPPLY CLIENT</h3>
+                <p>CEO, ABC Company</p>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-text">
+                <p>Venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros. Nam quam nunc
+                  , blandit vel, luctus pulvinar, hendrerit iderit runterum elit amet.</p>
+                <h3>HAPPLY CLIENT</h3>
+                <p>Marketing Manager, XYZ Inc.</p>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-text">
+                <p>Venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros. Nam quam nunc
+                  , blandit vel, luctus pulvinar, hendrerit iderit runterum elit amet.</p>
+                <h3>HAPPLY CLIENT</h3>
+                <p>IT Director, 123 Corp.</p>
+              </div>
+            </div>
+            <a class="prev" onclick="slide(-1)">&#10094;</a>
+            <a class="next" onclick="slide(1)">&#10095;</a>
+          </div>
+          
+          
+          
           <footer>
             <div class="footer-columns">
               <div class="column">
                 <h4>Working Hours</h4>
-                <p>Monday - Friday: 9am - 5pm</p>
-                <p>Saturday - Sunday: Closed</p>
+              
+                <p> Monday : Closed </p>
+                  <p>Tuesday : 4PM – 10PM </p>
+                    <p>Wednesday : 4PM – 10PM </p>
+                      <p> Thursday : 12PM – 10PM </p>
+                        <p>Friday : 12PM – 12AM </p>
+                          <p>Saturday : 12PM – 12AM </p>
+                            <p> Sunday : 10AM – 8PM * </p>
               </div>
               <div class="column">
-                <h4>Address</h4>
+                <h4>Location</h4>
+                <p>cheers@saintsandscholars.com</p>
+                 <p>(425) 292-9525.</p> 
+                  
+                 <p>7726 Center Bivd SE #110,
+                   Snoqualmie, WA98065</p>
                 <p>123 Main St.</p>
                 <p>Anytown, USA</p>
               </div>
               <div class="column">
                 <h4>Links</h4>
-                <ul>
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
+                <ul class="footer_link">
+                  <li><a href="#">home</a></li>
+                  <li><a href="#">menu</a></li>
+                  <li><a href="#">About us</a></li>
                 </ul>
               </div>
               <div class="column">
                 <h4>Subscribe</h4>
-                <p>Subscribe to our newsletter for updates and promotions</p>
+                <p class="text_subscribe">Thank you for your <br>
+                  interest in our <br>
+                  newsletter/service. <br>
+                   By subscribing</p>
                 <form>
-                  <input type="email" placeholder="Enter your email address">
-                  <button type="submit">Subscribe</button>
+                  <input type="email" placeholder="your email">
+                  <button type="submit">send</button>
                 </form>
               </div>
             </div>
@@ -251,6 +333,8 @@
 <script src="custum.js">
 
 </script>
+ 
+
 </body>
     
 </html>

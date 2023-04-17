@@ -168,12 +168,16 @@ header {
     left:10%
 
 }
+.saint_logo {
+  margin-right: 290px;
+}
 
 nav {
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 91px;
 }
 
 ul {
@@ -199,7 +203,7 @@ a {
 
 
 .hero {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 20px;
     background-image: url('image2.png');
     background-size: cover;
@@ -394,8 +398,8 @@ top: 1908px;;
 
     text-align: center;
     background: #292929;
-    margin-right: 15px;
-    margin-left: 15px;
+    /* margin-right: 15px;
+    margin-left: 15px; */
   }
   
   .blog-post img {
@@ -559,9 +563,13 @@ h3 {
 .reservation{
   color: #FFC123;
   text-align: center;
+  font-size: 19px;
+  font-family: Arvo;
 }
 .opening_hours{
   text-align: center;
+  font-size: 40px;
+  font-family:Arvo;
 }
 .opening_sec {
   display: flex;
@@ -575,7 +583,8 @@ h3 {
 /* footer css */
 
 footer {
-  background-color: black;
+  margin-top: 50px;
+  background-color: #292929;
   color: white;
   padding: 50px 0;
 }
@@ -592,8 +601,10 @@ footer {
 }
 
 .column h4 {
-  font-size: 1.2rem;
+  font-size: 26px;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: Arvo;
 }
 
 .column p {
@@ -620,22 +631,147 @@ form {
 }
 
 input[type="email"] {
+  background-color: #544f4f4d;
   flex: 1;
   padding: 10px;
   border: none;
   border-radius: 5px 0 0 5px;
+  height: 55px;
 }
 
 button[type="submit"] {
-  background-color: white;
+  background-color: #FFC123;
   color: black;
   border: none;
   border-radius: 0 5px 5px 0;
-  padding: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
   cursor: pointer;
+  font-family: Arvo;
+  font-size: 18px;
 }
 
 button[type="submit"]:hover {
   background-color: #fff;
   color: black;
+}
+.footer_link{
+  display: inline;
+}
+.footer_link li a {
+  font-weight: 400;
+}
+.footer_link li {
+  margin: 0px;
+  padding-bottom: 10px;
+}
+.text_subscribe{
+  line-height: 20px;
+}
+
+/* availibality form */
+
+.reservation-section {
+  background-color: #292929;
+  color: white;
+  text-align: center;
+  
+  height: 350px;
+  
+  justify-content: center;
+  align-items: center;
+  display: inline-grid;
+  width: 100%;
+  margin-top: 50px;
+
+}
+.reservation-section h2 {
+  padding-top: 60px;
+}
+
+.reservation-form {
+ justify-content: center;
+  margin-top: 20px;
+}
+
+.reservation-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.reservation-form input[type="date"], 
+.reservation-form input[type="time"], 
+.reservation-form input[type="number"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 150px;
+  font-size: 16px;
+}
+
+.reservation-form button {
+  padding: 13px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFC123;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.reservation-form button:hover {
+  background-color: #3e8e41;
+}
+.col-3 {
+  width: 215px;
+}
+
+/* testimonial slider */
+
+.testimonial-slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.testimonial-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.testimonial-slide.active-slide {
+  opacity: 1;
+}
+
+.testimonial-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
 }
