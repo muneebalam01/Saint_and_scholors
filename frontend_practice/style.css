@@ -472,11 +472,17 @@ background: #FFC123;
   padding: 10px;
 }
 .content_of_subscribe {
+  font-family: Arvo;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0.09em;
+  text-align: left;
   text-align: center;
   color: #FFC123;
-  padding-top: 50px;
+  padding-top: 20px;
   font-weight: 700;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 

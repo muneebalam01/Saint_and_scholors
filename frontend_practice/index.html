@@ -1,16 +1,23 @@
 <html>
-  <head>
-    <title></title>
-  <link rel="stylesheet" type="text/css" href="style.css" media="screen" /> 
- <style>
-  .container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-  }
- </style>
-  </head>
-  
+
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <style>
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    p,
+    h2,
+    h3 {
+      font-family: Arvo;
+    }
+  </style>
+</head>
+
 <body>
   <!-- <div class="hero">
     <div class="container">
@@ -33,308 +40,338 @@
     </div>
   </div>
 
-    <header class="container">
-        <nav>
-        <img src="logo_saint.png" class="saint_logo">
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">Irish Week</a></li>
-            <li><a href="#">Reservation</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-      <div class="carousel">
-        <input type="radio" name="carousel" id="slide-btn-1" class="slide-btn" onclick="setInt();" checked />
-        <input type="radio" name="carousel" id="slide-btn-2" class="slide-btn" onclick="setInt();" />
-        <input type="radio" name="carousel" id="slide-btn-3" class="slide-btn" onclick="setInt();" />
-        <input type="radio" name="carousel" id="slide-btn-4" class="slide-btn" onclick="setInt();" />
-        <input type="radio" name="carousel" id="slide-btn-5" class="slide-btn" onclick="setInt();" />
-        <div class="slide one -effectparallax"><h1>Come experience <br>
-            craft cocktails</h1>
-          <div class="credit"><a href="#/">View More</a></div></div>
-        <div class="slide two -effectparallax"><h1>Come experience <br>
-            craft cocktails 2</h1>
-          <div class="credit"><a href="#">View More</a></div></div>
-        <div class="slide three -effectparallax"><h1>Come experience <br>
-            craft cocktails 3</h1>
-          <div class="credit"><a href="#">View More</a></div></div>
-        <div class="slide four -effectparallax"><h1>Come experience <br>
-            craft cocktails 4</h1>
-          <div class="credit"><a href="#">View More</a></div></div>
-        <div class="slide five -effectparallax"><h1>Slide 5</h1>
-          <div class="credit"><a href="#">View More</a></div></div>
-        <div class="labels">
-          <label for="slide-btn-1"></label>
-          <label for="slide-btn-2"></label>
-          <label for="slide-btn-3"></label>
-          <label for="slide-btn-4"></label>
-          <label for="slide-btn-5"></label>
-        </div>
+  <header class="container">
+    <nav>
+      <img src="logo_saint.png" class="saint_logo">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">Irish Week</a></li>
+        <li><a href="#">Reservation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="carousel">
+    <input type="radio" name="carousel" id="slide-btn-1" class="slide-btn" onclick="setInt();" checked />
+    <input type="radio" name="carousel" id="slide-btn-2" class="slide-btn" onclick="setInt();" />
+    <input type="radio" name="carousel" id="slide-btn-3" class="slide-btn" onclick="setInt();" />
+    <input type="radio" name="carousel" id="slide-btn-4" class="slide-btn" onclick="setInt();" />
+    <input type="radio" name="carousel" id="slide-btn-5" class="slide-btn" onclick="setInt();" />
+    <div class="slide one -effectparallax">
+      <h1>Come experience <br>
+        craft cocktails</h1>
+      <div class="credit"><a href="#/">View More</a></div>
+    </div>
+    <div class="slide two -effectparallax">
+      <h1>Come experience <br>
+        craft cocktails 2</h1>
+      <div class="credit"><a href="#">View More</a></div>
+    </div>
+    <div class="slide three -effectparallax">
+      <h1>Come experience <br>
+        craft cocktails 3</h1>
+      <div class="credit"><a href="#">View More</a></div>
+    </div>
+    <div class="slide four -effectparallax">
+      <h1>Come experience <br>
+        craft cocktails 4</h1>
+      <div class="credit"><a href="#">View More</a></div>
+    </div>
+    <div class="slide five -effectparallax">
+      <h1>Slide 5</h1>
+      <div class="credit"><a href="#">View More</a></div>
+    </div>
+    <div class="labels">
+      <label for="slide-btn-1"></label>
+      <label for="slide-btn-2"></label>
+      <label for="slide-btn-3"></label>
+      <label for="slide-btn-4"></label>
+      <label for="slide-btn-5"></label>
+    </div>
+  </div>
+
+
+  <section class="reservation-section">
+    <h2>Select date and time for reservation</h2>
+    <form class="reservation-form">
+      <div class="col-3">
+
+      </div>
+      <div class="col-3">
+        <label for="reservation-date">Date:</label>
+        <input type="date" id="reservation-date" name="reservation-date" value="19-04-2023" required>
+      </div>
+      <div class="col-3">
+        <label for="reservation-time">Time:</label>
+        <input type="time" id="reservation-time" name="reservation-time" required>
+      </div>
+      <div class="col-3">
+        <label for="people-counter">Number of people:</label>
+        <input type="number" id="people-counter" name="people-counter" min="1" max="10" value="1" required>
+      </div>
+
+      <div class="col-3">
+        <label></label><br>
+        <button type="submit">Check Availability</button>
       </div>
 
 
-      <section class="reservation-section">
-        <h2>Select date and time for reservation</h2>
-        <form class="reservation-form">
-          <div class="col-3">
-
-          </div>
-          <div class="col-3">
-            <label for="reservation-date">Date:</label>
-          <input type="date" id="reservation-date" name="reservation-date" value="19-04-2023" required>
-          </div>
-          <div class="col-3">
-            <label for="reservation-time">Time:</label>
-          <input type="time" id="reservation-time" name="reservation-time" required>
-          </div>
-          <div class="col-3">
-            <label for="people-counter">Number of people:</label>
-            <input type="number" id="people-counter" name="people-counter" min="1" max="10" value="1" required>
-          </div>
-          
-          <div class="col-3">
-            <label></label><br>
-            <button type="submit">Check Availability</button>
-          </div>
-          
-        
-          
-         
-          
-          
-        </form>
-        <p>Click on check availabilty button and book your table</p>
-      </section>
 
 
-      <section class=" hero">
-        <div class="hero-image">
-          <img src = "logo_figma.png" class = "logo_new">
-        </div>
-        <div class="hero-image">
-            <div class="hero-content">
-                <h1 class="hero-heading">ENJOY AUTHENTIC IRISH
-                    DECOR AND AWESOME 
-                   PEOPLE!</h1>
-                <p class="hero-text">The owners of Saints and Scholars Irish Pub had a vision to create a space that 
-                    would bring the community together. After 2.5 years of hard work and dedication 
-                    they opened their doors on October 4 th 2022. The owners of the new </p>
-                <button class="hero-button">view more </button>
-              </div>
-        </div>
-      </section>
-      
-      <div class="content_of_subscribe"><h2>About Us</h2></div>
-      <div class="container">
-      
-      <section class="blog-section">
-        <div class="blog-post first_post">
-          <img src="Rectangle29.png" alt="Blog post 1">
-           <div class="blog-content">
+
+
+    </form>
+    <p>Click on check availabilty button and book your table</p>
+  </section>
+
+
+  <section class=" hero">
+    <div class="hero-image">
+      <img src="logo_figma.png" class="logo_new">
+    </div>
+    <div class="hero-image">
+      <div class="hero-content">
+        <h1 class="hero-heading">ENJOY AUTHENTIC IRISH
+          DECOR AND AWESOME
+          PEOPLE!</h1>
+        <p class="hero-text">The owners of Saints and Scholars Irish Pub had a vision to create a space that
+          would bring the community together. After 2.5 years of hard work and dedication
+          they opened their doors on October 4 th 2022. The owners of the new </p>
+        <button class="hero-button">view more </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="content_of_subscribe">
+    <h2>About Us</h2>
+  </div>
+  <div class="container">
+
+    <section class="blog-section">
+      <div class="blog-post first_post">
+        <img src="Rectangle29.png" alt="Blog post 1">
+        <div class="blog-content">
           <h2>menu</h2>
-          <p>The owners of Saints and Scholars Irish Pub had a vision to create a space that would bring the community together. 
-            After 2.5 years of hard work and dedication they opened their doors on October 4 th 2022. The owners of the new </p>
+          <p>The owners of Saints and Scholars Irish Pub had a vision to create a space that would bring the community
+            together.
+            After 2.5 years of hard work and dedication they opened their doors on October 4 th 2022. The owners of the
+            new </p>
         </div>
-          </div>
-        <div class="blog-post">
-          <img src="Rectangle30.png" alt="Blog post 2">
-          <div class="blog-content">
+      </div>
+      <div class="blog-post">
+        <img src="Rectangle30.png" alt="Blog post 2">
+        <div class="blog-content">
           <h2>about us</h2>
-          <p>The owners of Saints and Scholars Irish Pub had a vision to create a space that would bring the community 
-            together. After 2.5 years of hard work and dedication they opened 
-            their doors on October 4 th 2022. The owners of the new  </p>
+          <p>The owners of Saints and Scholars Irish Pub had a vision to create a space that would bring the community
+            together. After 2.5 years of hard work and dedication they opened
+            their doors on October 4 th 2022. The owners of the new </p>
         </div>
       </div>
-        <div class="blog-post">
-          <img src="Rectangle31.png" alt="Blog post 3">
-          <div class="blog-content">
+      <div class="blog-post">
+        <img src="Rectangle31.png" alt="Blog post 3">
+        <div class="blog-content">
           <h2>design</h2>
-          <p>The owners of Saints and Scholars Irish Pub had a vision to create a space that would bring the community together.
-             After 2.5 years of hard work and dedication they opened their doors on October 4 th 2022. The owners of the new </p>
+          <p>The owners of Saints and Scholars Irish Pub had a vision to create a space that would bring the community
+            together.
+            After 2.5 years of hard work and dedication they opened their doors on October 4 th 2022. The owners of the
+            new </p>
         </div>
       </div>
-      </section>
+    </section>
+  </div>
+
+
+
+  <div class="container two-column-section">
+    <div class="column-1">
+      <h2 class="title">CURATED TO MAKE
+        AMAZING MEMORIES</h2>
+      <p class="description">The owners of Saints and Scholars Irish Pub had a vision to create a space that would bring
+        the community together.
+        After 2.5 years of hard work and dedication they opened their doors on October 4 th 2022.
+        The owners of the new space are a husband and wife team Adrian Webb and Amanda Stoffel.
+        A quote from Adrianthat tells a bit more about their vision for Saints and Scholars: Says Adrian,
+        “We hope there will be a lot of amazing memories made here, including first dates, anniversaries, birthdays,
+        special events, and we want to help make those memories special. At the same time, we also want people to feel
+        this is a place where they can come in for a casual beer.
+        The Irish are all about bringing a great light-hearted </p>
+    </div>
+    <div class="column-2">
+      <img src="image_new_hero.png" alt="Your image">
+    </div>
+  </div>
+
+
+  <section>
+    <div class="content_of_subscribe">
+      <h2>MORE INFO TO COME</h2>
+    </div>
+    <div class="container">
+      <div class="column">
+        <div class="image" style="background-image: url('Rectangle29.png')">
+          <div class="overlay">
+            <h3>live music</h3>
+          </div>
+        </div>
       </div>
-
-
-    
-       <div class="container two-column-section">
-        <div class="column-1">
-          <h2 class="title">CURATED TO MAKE
-            AMAZING MEMORIES</h2>
-          <p class="description">The owners of Saints and Scholars Irish Pub had a vision to create a space that would bring the community together.
-             After 2.5 years of hard work and dedication they opened their doors on October 4 th 2022.
-              The owners of the new space are a husband and wife team Adrian Webb and Amanda Stoffel. 
-              A quote from Adrianthat tells a bit more about their vision for Saints and Scholars: Says Adrian, 
-              “We hope there will be a lot of amazing memories made here, including first dates, anniversaries, birthdays, special events, and we want to help make those memories special. At the same time, we also want people to feel this is a place where they can come in for a casual beer. 
-            The Irish are all about bringing a great light-hearted </p>
-        </div>
-        <div class="column-2">
-          <img src="image_new_hero.png" alt="Your image">
-        </div>
-        </div>
-
-      
-        <section>
-          <div class="content_of_subscribe"><h2>MORE INFO TO COME</h2></div>
-          <div class="container">
-            <div class="column">
-              <div class="image" style="background-image: url('Rectangle29.png')">
-                <div class="overlay">
-                  <h3>live music</h3>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="image" style="background-image: url('Rectangle30.png')">
-                <div class="overlay">
-                  <h3>live music</h3>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="image" style="background-image: url('Rectangle31.png')">
-                <div class="overlay">
-                  <h3>live music</h3>
-                </div>
-              </div>
-            </div>
+      <div class="column">
+        <div class="image" style="background-image: url('Rectangle30.png')">
+          <div class="overlay">
+            <h3>live music</h3>
           </div>
-          
-        </section>
-     
-
-        <div class="content_of_subscribe"><h2>NEWS & EVENTS</h2></div>
-        <section class="subscribe-to-us">
-          <form class="myform">
-            <input type="text"  placeholder="For the most upto date Information Please follow us on Saint & Scholars">
-            <button type="button" class="submit-btn"> <img src="Vector.png" class = "search_btn"> </button>
-            
-          </form>
-           <p style="text-align: center; font-size: 23px; line-height: 28px;">
-            If you're looking for the latest news and events, of our  shop please search it <br>
-            Find  the most recent news articles
-           </p>
-
-          
-        </section>
-     
-         <section class = "location">
-          <div class="content_of_subscribe"><h2>our location</h2></div>
-          <div class="map-section">
-            <div class="map-container">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.315243587501!2d-74.00597468459342!3d40.71277532552527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598a7a3a17e1%3A0x8e9a1a79a2c8345!2sStatue%20of%20Liberty!5e0!3m2!1sen!2sus!4v1650351600726!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="address-container">
-              <p class="reservation">call for reservation</p>
-              <h2 class="opening_hours">opening hours</h2>
-               <div class="opening_sec">
-               <div class="opening_day_time">
-                <p class="reservation">Tuesday to Sunday </p>
-                <h2 class="opening_hours">09: 00</h2>
-                <h2 class="opening_hours">22: 00</h2>
-               </div>
-
-               <div class="opening_day_time">
-                <p class="reservation">Monday</p>
-                <h2 class="opening_hours">Closed</h2>
-                <h2 class="opening_hours">- - - - -</h2>
-               </div>
-               
-              </div>
-              <button class="location_btn">(425) 292-9525</button>
-            
-            </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="image" style="background-image: url('Rectangle31.png')">
+          <div class="overlay">
+            <h3>live music</h3>
           </div>
-          
-          </section>
+        </div>
+      </div>
+    </div>
 
-          <div class="testimonial-slider">
-            <div class="testimonial-slide active-slide">
-              <div class="testimonial-text">
-                <p>Venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros. Nam quam nunc
-                  , blandit vel, luctus pulvinar, hendrerit iderit runterum elit amet.</p>
-                <h3>HAPPLY CLIENT</h3>
-                <p>CEO, ABC Company</p>
-              </div>
-            </div>
-            <div class="testimonial-slide">
-              <div class="testimonial-text">
-                <p>Venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros. Nam quam nunc
-                  , blandit vel, luctus pulvinar, hendrerit iderit runterum elit amet.</p>
-                <h3>HAPPLY CLIENT</h3>
-                <p>Marketing Manager, XYZ Inc.</p>
-              </div>
-            </div>
-            <div class="testimonial-slide">
-              <div class="testimonial-text">
-                <p>Venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros. Nam quam nunc
-                  , blandit vel, luctus pulvinar, hendrerit iderit runterum elit amet.</p>
-                <h3>HAPPLY CLIENT</h3>
-                <p>IT Director, 123 Corp.</p>
-              </div>
-            </div>
-            <a class="prev" onclick="slide(-1)">&#10094;</a>
-            <a class="next" onclick="slide(1)">&#10095;</a>
+  </section>
+
+
+  <div class="content_of_subscribe">
+    <h2>NEWS & EVENTS</h2>
+  </div>
+  <section class="subscribe-to-us">
+    <form class="myform">
+      <input type="text" placeholder="For the most upto date Information Please follow us on Saint & Scholars">
+      <button type="button" class="submit-btn"> <img src="Vector.png" class="search_btn"> </button>
+
+    </form>
+    <p style="text-align: center; font-size: 23px; line-height: 28px;">
+      If you're looking for the latest news and events, of our shop please search it <br>
+      Find the most recent news articles
+    </p>
+
+
+  </section>
+
+  <section class="location">
+    <div class="content_of_subscribe">
+      <h2>our location</h2>
+    </div>
+    <div class="map-section">
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.315243587501!2d-74.00597468459342!3d40.71277532552527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598a7a3a17e1%3A0x8e9a1a79a2c8345!2sStatue%20of%20Liberty!5e0!3m2!1sen!2sus!4v1650351600726!5m2!1sen!2sus"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="address-container">
+        <p class="reservation">call for reservation</p>
+        <h2 class="opening_hours">opening hours</h2>
+        <div class="opening_sec">
+          <div class="opening_day_time">
+            <p class="reservation">Tuesday to Sunday </p>
+            <h2 class="opening_hours">09: 00</h2>
+            <h2 class="opening_hours">22: 00</h2>
           </div>
-          
-          
-          
-          <footer>
-            <div class="footer-columns">
-              <div class="column">
-                <h4>Working Hours</h4>
-              
-                <p> Monday : Closed </p>
-                  <p>Tuesday : 4PM – 10PM </p>
-                    <p>Wednesday : 4PM – 10PM </p>
-                      <p> Thursday : 12PM – 10PM </p>
-                        <p>Friday : 12PM – 12AM </p>
-                          <p>Saturday : 12PM – 12AM </p>
-                            <p> Sunday : 10AM – 8PM * </p>
-              </div>
-              <div class="column">
-                <h4>Location</h4>
-                <p>cheers@saintsandscholars.com</p>
-                 <p>(425) 292-9525.</p> 
-                  
-                 <p>7726 Center Bivd SE #110,
-                   Snoqualmie, WA98065</p>
-                <p>123 Main St.</p>
-                <p>Anytown, USA</p>
-              </div>
-              <div class="column">
-                <h4>Links</h4>
-                <ul class="footer_link">
-                  <li><a href="#">home</a></li>
-                  <li><a href="#">menu</a></li>
-                  <li><a href="#">About us</a></li>
-                </ul>
-              </div>
-              <div class="column">
-                <h4>Subscribe</h4>
-                <p class="text_subscribe">Thank you for your <br>
-                  interest in our <br>
-                  newsletter/service. <br>
-                   By subscribing</p>
-                <form>
-                  <input type="email" placeholder="your email">
-                  <button type="submit">send</button>
-                </form>
-              </div>
-            </div>
-          </footer>
-          
 
-    
-<script src="custum.js">
+          <div class="opening_day_time">
+            <p class="reservation">Monday</p>
+            <h2 class="opening_hours">Closed</h2>
+            <h2 class="opening_hours">- - - - -</h2>
+          </div>
 
-</script>
- 
+        </div>
+        <button class="location_btn">(425) 292-9525</button>
+
+      </div>
+    </div>
+
+  </section>
+  <section class="testimonial_section">
+    <div class="content_of_subscribe">
+      <h2>OUR CUSTOMERS STORIES</h2>
+    </div>
+    <div class="testimonial-slider">
+      <div class="testimonial-slide active-slide">
+        <div class="testimonial-text">
+          <p>Venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros. Nam quam nunc
+            , blandit vel, luctus pulvinar, hendrerit iderit runterum elit amet.</p>
+          <h3>HAPPLY CLIENT</h3>
+          <p>CEO, ABC Company</p>
+        </div>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial-text">
+          <p>Venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros. Nam quam nunc
+            , blandit vel, luctus pulvinar, hendrerit iderit runterum elit amet.</p>
+          <h3>HAPPLY CLIENT</h3>
+          <p>Marketing Manager, XYZ Inc.</p>
+        </div>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial-text">
+          <p>Venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros. Nam quam nunc
+            , blandit vel, luctus pulvinar, hendrerit iderit runterum elit amet.</p>
+          <h3>HAPPLY CLIENT</h3>
+          <p>IT Director, 123 Corp.</p>
+        </div>
+      </div>
+      <a class="prev" onclick="slide(-1)">&#10094;</a>
+      <a class="next" onclick="slide(1)">&#10095;</a>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-columns">
+      <div class="column">
+        <h4>Working Hours</h4>
+
+        <p> Monday : Closed </p>
+        <p>Tuesday : 4PM – 10PM </p>
+        <p>Wednesday : 4PM – 10PM </p>
+        <p> Thursday : 12PM – 10PM </p>
+        <p>Friday : 12PM – 12AM </p>
+        <p>Saturday : 12PM – 12AM </p>
+        <p> Sunday : 10AM – 8PM * </p>
+      </div>
+      <div class="column">
+        <h4>Location</h4>
+        <p>cheers@saintsandscholars.com</p>
+        <p>(425) 292-9525.</p>
+
+        <p>7726 Center Bivd SE #110,
+          Snoqualmie, WA98065</p>
+        <p>123 Main St.</p>
+        <p>Anytown, USA</p>
+      </div>
+      <div class="column">
+        <h4>Links</h4>
+        <ul class="footer_link">
+          <li><a href="#">home</a></li>
+          <li><a href="#">menu</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Subscribe</h4>
+        <p class="text_subscribe">Thank you for your <br>
+          interest in our <br>
+          newsletter/service. <br>
+          By subscribing</p>
+        <form>
+          <input type="email" placeholder="your email">
+          <button type="submit">send</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="custum.js">
+
+  </script>
+
 
 </body>
-    
+
 </html>
